@@ -15,8 +15,8 @@ find_package(control_msgs REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rcpputils REQUIRED)
 find_package(rcutils REQUIRED)
-find_package(tinyxml2_vendor REQUIRED)
-find_package(TinyXML2 REQUIRED)
+#find_package(tinyxml2_vendor REQUIRED)
+find_package(tinyxml2 REQUIRED)
 
 add_library(
   hardware_interface
@@ -167,7 +167,8 @@ ament_export_dependencies(
   control_msgs
   pluginlib
   rcpputils
-  tinyxml2_vendor
-  TinyXML2
+  #tinyxml2_vendor
+ # TinyXML2
+ tinyxml2
 )
 ament_package()
